@@ -23,11 +23,10 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SundayModel()),
         ChangeNotifierProvider(create: (_) => MondayModel()),
         ChangeNotifierProvider(create: (_) => TuesdayModel()),
-        ChangeNotifierProvider(create: (_) => FridayModel()),
         ChangeNotifierProvider(
-            create: (_) => WednesdayModel()), // Provide FridayModel
+            create: (_) => WednesdayModel()), // Provide WednesdayModel
         ChangeNotifierProvider(
-            create: (_) => ThursdayModel()), // Provide MainModel
+            create: (_) => ThursdayModel()), // Provide ThursdayModel
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
